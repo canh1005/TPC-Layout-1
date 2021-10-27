@@ -1,0 +1,21 @@
+@mixin Text($font-style,$fw,$fs,$line-height,$letter-spacing,$text-transform,$color){
+    font-family: SF Pro Display;
+    font-style: $font-style;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
+    color: $color;
+}
+@mixin bannerBG(){
+    height: 625px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@mixin aboutImg($width,$height) {
+    width: $width;
+    height: $height;
+    border-radius: 20px;
+}

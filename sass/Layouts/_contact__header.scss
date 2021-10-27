@@ -1,0 +1,92 @@
+.contact__header {
+    background: $color-black-0;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    .contact__header-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 50px;
+        .contact {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            // position: absolute;
+            // left: 375px;
+            // top: 15px;
+            .contact__name {
+                @include Text(normal, normal, 14px, 17px, 0.1em, uppercase, $color-orange-0);
+            }
+            .contact__num {
+                // @include contactText();
+                color: $color-white;
+            }
+            .line {
+                display: block;
+                width: 20px;
+                opacity: 0.4;
+                border: 0.5px solid #ffffff;
+                transform: rotate(90deg);
+            }
+            #home,
+            #phone {
+                width: 16px;
+                height: 16px;
+                display: block;
+            }
+            #home {
+                height: 13.6px;
+            }
+        }
+        .find__us {
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                // @include contactText();
+                color: $color-white;
+            }
+        }
+    }
+}
+.contact__header-mobi {
+    display: none;
+}
+@media screen and (max-width: 1023.98px) {
+    .contact__header {
+        display: none;
+    }
+    .contact__header-mobi {
+        display: block!important;
+        position: fixed;
+        top: 50%;
+        z-index: 1000;
+        transform: translateX(737px);
+        .contact__header-mobi-content {
+            
+            .contact__list {
+                .contact__items {
+                    background: $color-black-0;
+                    margin: 10px 0;
+                    border-radius: 10px;
+                    &:hover{
+                        transform: translateX(-737px);
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                        @include Text(normal, normal, 16px, 17px, 0.1em, uppercase, $color-white);
+                        p{
+                            margin-bottom: 10px;
+                        }
+                        .icon {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

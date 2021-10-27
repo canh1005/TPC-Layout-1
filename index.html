@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>TPC</title>
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    >
+</head>
+
+<body>
+    <!-- Contact header -->
+    <section class="contact__header">
+        <div class="contact__header-content">
+            <div class="contact">
+                <span><img
+                        src="./assets/img/Icon/Phone.png"
+                        alt=""
+                        id="phone"
+                    ></span>
+                <span class="contact__name">Contact 1:</span><span class="contact__num">0387271786 (duong)</span>
+                <span class="line"></span>
+                <span class="contact__name">Contact 2:</span><span class="contact__num">0987900930(trinh)</span>
+                <span class="line"></span>
+                <span class="contact__name">Korean support:</span><span class="contact__num">+82 10-2045-3645</span>
+            </div>
+            <div class="find__us">
+                <span><img
+                        src="./assets/img/Icon/Home.png"
+                        alt=""
+                        id="home"
+                    > Tìm chúng tôi</span>
+            </div>
+        </div>
+    </section>
+    <div class="contact__header-mobi">
+        <div class="contact__header-mobi-content">
+            <ul class="contact__list">
+                <li class="contact__items"><a href="#">
+                    <div class="icon">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.7162 10.5022C13.7366 10.5022 12.7747 10.349 11.8633 10.0478C11.4167 9.89542 10.8676 10.0352 10.595 10.3151L8.796 11.6732C6.70963 10.5595 5.42446 9.27475 4.32596 7.20404L5.64408 5.45188C5.98654 5.10988 6.10938 4.61029 5.96221 4.14154C5.65971 3.22529 5.50604 2.26392 5.50604 1.28392C5.50608 0.575958 4.93013 0 4.22221 0H1.28387C0.575958 0 0 0.575958 0 1.28387C0 9.39846 6.60158 16 14.7162 16C15.4241 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5022 14.7162 10.5022Z" fill="#F15B40"/>
+                            </svg>                            
+                        
+                    </div>
+                    <div class="info">
+                        <p>0387271786 (Duong)</p>
+                        <p>0987900930(trinh)</p>
+                        <p>Korean support: +82 10-2045-3645</p>
+                    </div>
+                </a></li>
+                <li class="contact__items"><a href="#">
+                    <div class="find-us">
+                        <svg width="25" height="25" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.99998 0.200012L0 7.40001H2.4V13.8H6.40001V9.00002H9.59999V13.8H13.6V7.40001H16L7.99998 0.200012Z" fill="#F15B40"/>
+                            </svg>                            
+                        
+                    </div>
+                    <div class="info">Tìm chúng tôi</div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <section class="header">
+        <div class="header__content">
+            <div class="header__brand">
+                <a href="#"><img
+                    src="./assets/img/Logo/Frame.png"
+                    alt=""
+                    id="frame"
+                ></a>
+                <div class="line"></div>
+                <div class="circle__choice">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="url(#paint0_linear_95:5662)"/>
+                        <path d="M18.1539 20C18.1539 21.0178 18.9822 21.8461 20 21.8461C21.0179 21.8461 21.8462 21.0178 21.8462 20C21.8462 18.9821 21.0179 18.1538 20 18.1538C18.9822 18.1538 18.1539 18.9821 18.1539 20Z" fill="white"/>
+                        <path d="M18.1539 26.1538C18.1539 27.1717 18.9822 28 20 28C21.0179 28 21.8462 27.1717 21.8462 26.1538C21.8462 25.136 21.0179 24.3077 20 24.3077C18.9822 24.3077 18.1539 25.136 18.1539 26.1538Z" fill="white"/>
+                        <path d="M18.1539 13.8462C18.1539 14.864 18.9822 15.6923 20 15.6923C21.0179 15.6923 21.8462 14.864 21.8462 13.8462C21.8462 12.8283 21.0179 12 20 12C18.9822 12 18.1539 12.8283 18.1539 13.8462Z" fill="white"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_95:5662" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F15B40"/>
+                        <stop offset="1" stop-color="#ED212B"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                        
+                </div>
+                <span class="danhMuc">Danh mục sản phẩm</span>
+            </div>
+            <button id="btn-collapse">...</button>
+            <ul class="header__list" id="header__list">
+                <li class="header__items active"><a href="#">Giới thiệu</a></li>
+                <li class="header__items"><a href="#">Tài liệu 2D</a></li>
+                <li class="header__items"><a href="#">Tài liệu 3D</a></li>
+                <li class="header__items"><a href="#">Tin tức</a></li>
+                <li class="header__items"><a href="#">Tuyển dụng</a></li>
+                <li class="header__items"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner__content">
+            <div class="banner__bg">
+                <ul class="banner__lst">
+                    <li class="banner__items"><a href="#"> 1. Tên banner</a></li>
+                    <li class="banner__items"><a href="#"> 2. Tên banner</a></li>
+                    <li class="banner__items"><a href="#"> 3. Tên banner</a></li>
+                    <li class="banner__items"><a href="#"> 4. Tên banner</a></li>
+                    <li class="banner__items"><a href="#"> 5. Tên banner</a></li>
+                </ul>
+                <div class="prev"><img src="./assets/img/Icon/right-arrow.png" alt=""></div>
+                <div class="next"><img src="./assets/img/Icon/right-arrow.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about">
+        <div class="about__content">
+            <div class="about__img">
+                <div class="img__1">
+                    <img
+                        src="./assets/img/About/796491.png"
+                        alt=""
+                    >
+                    <div class="rectangle"></div>
+                </div>
+                <div class="img__2">
+                    <img
+                        src="./assets/img/About/796841.png"
+                        alt=""
+                    >
+                    <div class="play"><img
+                            src="./assets/img/Icon/play.png"
+                            alt=""
+                            id="play"
+                        ></div>
+                </div>
+                <div class="img__3">
+                    <img
+                        src="./assets/img/About/1321111.png"
+                        alt=""
+                    >
+                </div>
+            </div>
+            <div class="about__description">
+                <h2 class="slogan">Chúng tôi <span style="color: #F15B40;">cố gắng</span> để làm hài lòng khách hàng của
+                    chúng tôi <span id="TPC">TPC Co.</span></h2>
+                <p class="first__para">
+                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ
+                    cho in ấn.
+                </p>
+                <p class="second__para">
+                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ
+                    cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những
+                    năm 1500
+                </p>
+                <ul class="about__list">
+                    <li class="about__items"><a href="#">
+                            <img
+                                src="./assets/img/Icon/Chat.png"
+                                alt=""
+                            >
+                            <span>Lời nhắn từ CEO</span>
+                        </a></li>
+                    <li class="about__items"><a href="#">
+                            <img
+                                src="./assets/img/Icon/Hourglass.png"
+                                alt=""
+                            >
+                            <span>Lịch sử hình thành</span>
+                        </a></li>
+                    <li class="about__items"><a href="#">
+                            <img
+                                src="./assets/img/Icon/target.png"
+                                alt=""
+                            >
+                            <span>Tầm nhìn & sứ mệnh</span>
+                        </a></li>
+                    <li class="about__items"><a href="#">
+                            <img
+                                src="./assets/img/Icon/location.png"
+                                alt=""
+                            >
+                            <span>Giới thiệu Công ty</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- Product -->
+    <section class="product">
+        <div class="product__content">
+            <ul class="product__list">
+                <li class="product__items"><a href="#">
+                        <div class="product__detail">
+                            <h2>Sản phẩm</h2>
+                            <div class="small__line"></div>
+                            <p class="all-product-text">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn
+                                trang
+                                phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                            <div class="btn__show-detail show-all">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem tất cả</span>
+                            </div>
+                            <div class="line__bottom"></div>
+                        </div>
+                    </a></li>
+                <li class="product__items"><a href="#">
+                        <div class="product__detail ">
+                            <div class="line"></div>
+                            <h2>Thiết bị khí nén</h2>
+                            <p></p>
+                            <div class="btn__show-detail">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem sản phẩm</span>
+                            </div>
+                            <img src="./assets/img/Product/nanobots 1.png" alt="" class="product__icon">                                
+                            <div class="line__bottom"></div>
+                        </div>
+                    </a></li>
+                <li class="product__items"><a href="#">
+                        <div class="product__detail">
+                            <div class="line"></div>
+                            <h2>Thiết bị chân không</h2>
+                            <p></p>
+                            <div class="btn__show-detail">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem sản phẩm</span>
+                            </div>
+                            <img src="./assets/img/Product/time-travelling 1.png" alt="" class="product__icon">
+                            <div class="line__bottom"></div>
+                        </div>
+                    </a></li>
+                <li class="product__items"><a href="#">
+                        <div class="product__detail">
+                            <h2>Thiết bị chuyển động</h2>
+                            <p></p>
+                            <div class="btn__show-detail">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem sản phẩm</span>
+                            </div>
+                            <img src="./assets/img/Product/Frame 6.png" alt="" class="product__icon">
+                        </div>
+                    </a></li>
+                <li class="product__items"><a href="#">
+                        <div class="product__detail">
+                            <h2>Robot Đơn trục</h2>
+                            <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn
+                                trang
+                                phục vụ cho in ấn. Lorem Ipsum đã được sử dụng</p>
+                            <div class="btn__show-detail">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem sản phẩm</span>
+                            </div>
+                            <img src="./assets/img/Product/industrial-robot-2 1.png" alt="" class="product__icon">
+                        </div>
+                    </a></li>
+                <li class="product__items"><a href="#">
+                        <div class="product__detail">
+                            <h2>Thiết bị khác</h2>
+                            <p></p>
+                            <div class="btn__show-detail">
+                                <button><img
+                                        src="./assets/img/Icon/right-arrow.png"
+                                        alt=""
+                                    ></button>
+                                <span>Xem sản phẩm</span>
+                            </div>
+                            <img src="./assets/img/Product/futuristic 1.png" alt="" class="product__icon">
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- New Product -->
+    <section class="new__product">
+        <div class="new__product-content">
+            <div class="headline">
+                <h1>Sản phẩm mới</h1>
+                <ul class="headline__list">
+                    <li class="headline__list-items"><a href="#">Khí nén</a></li>
+                    <li class="headline__list-items"><a href="#"></a>Thiết bị chân không</li>
+                    <li class="headline__list-items"><a href="#">Thiết bị chuyển động</a></li>
+                    <li class="headline__list-items"><a href="#">Robot đơn trục</a></li>
+                    <li class="headline__list-items"><a href="#">Thiết bị khác</a></li>
+                </ul>
+            </div>
+            <ul
+                class="new__product-list"
+                id="new__product-list"
+            >
+
+            </ul>
+            <div class="new__product-footer">
+                <div class="underline">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="circle"><svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle
+                                cx="7"
+                                cy="7"
+                                r="7"
+                                fill="#ED212B"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="view__product">
+                    <div class="circle"><img
+                            src="./assets/img/Icon/right-arrow.png"
+                            alt=""
+                        ></div>
+                    <div class="text">Xem tất cả sản phẩm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand -->
+    <section class="brand">
+        <div class="brand__content">
+            <ul id="brand__list"></ul>
+            <img
+                src="./assets/img/Icon/curve.png"
+                alt=""
+                id="curve"
+            >
+            <button class="left"><img
+                    src="./assets/img/Icon/right-arrow.png"
+                    alt=""
+                ></button>
+            <button class="right"><img
+                    src="./assets/img/Icon/right-arrow.png"
+                    alt=""
+                ></button>
+        </div>
+    </section>
+    <!-- News blog -->
+    <section class="news__blog">
+        <div class="news__blog-content">
+            <h1>Bài viết mới</h1>
+            <div class="news__blog-items">
+                <a class="news__blog-detail long-news-1" href="#">
+                    <div class="new__blog-img">
+                        <div class="date">25 tháng 12, 2021</div>
+                        <img
+                            src="./assets/img/News/News1.png"
+                            alt=""
+                        >
+                    </div>
+                    <div class="new__blog-description">
+                        <h2>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. </h2>
+                        <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ
+                            những
+                            năm 1500</p>
+                    </div>
+
+                </a>
+                <a class="news__blog-detail" href="#">
+                    <div class="new__blog-img">
+                        <div class="date">25 tháng 12, 2021</div>
+                        <img
+                            src="./assets/img/News/News1.png"
+                            alt=""
+                        >
+                    </div>
+                    <div class="new__blog-description">
+                        <h2>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. </h2>
+                    </div>
+                </a>
+                <a class="news__blog-detail" href="#">
+                    <div class="new__blog-img">
+                        <div class="date">25 tháng 12, 2021</div>
+                        <img
+                            src="./assets/img/News/News1.png"
+                            alt=""
+                        >
+                    </div>
+                    <div class="new__blog-description">
+                        <h2>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. </h2>
+                    </div>
+                </a>
+                <a class="news__blog-detail long-news-2" href="#">
+                    <div class="new__blog-img">
+                        <div class="date">25 tháng 12, 2021</div>
+                        <img
+                            src="./assets/img/News/News1.png"
+                            alt=""
+                        >
+                    </div>
+                    <div class="new__blog-description">
+                        <h2>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. </h2>
+                        <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ
+                            cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ
+                            những
+                            năm 1500</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__info">
+                <div class="title">Bạn có nhu cầu cần tư vấn</div>
+                <div class="contact">
+                    <h2>Gọi cho chúng tôi</h2>
+                    <div class="contact__info">
+                        <div class="contact__items">
+                            <div class="phone">03 87 271 786</div>
+                            <div class="name">Contact 1: LE HUNG DUONG</div>
+                        </div>
+                        <span class="line">/</span>
+                        <div class="contact__items">
+                            <div class="phone">0987 900 930</div>
+                            <div class="name">Contact 2: LE VAN TRINH</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addressandsocial">
+                    <ul class="address">
+                        <li>Unit 1201, An-Gang Private tower 1cha, Magok Joonang-ro 165,
+                            Gangseo-ku, Seoul, Korea </li>
+                        <li><span style="font-weight: 600;">Postal code:</span> 07788</li>
+                        <li><span style="font-weight: 600;">Email:</span> thcgroup3@tanhay.com</li>
+                    </ul>
+                    <div class="social">
+                        <a
+                            class="icon"
+                            href="#"
+                            id="fb"
+                        ><svg
+                                width="31"
+                                height="31"
+                                viewBox="0 0 31 31"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.3953 10.0042L17.9834 10.0051C16.8762 10.0051 16.6616 10.531 16.6616 11.3026V13.0051H19.3025L18.9584 15.6723H16.6616V22.5142H13.9081V15.6723H11.6056V13.0051H13.9081V11.0392C13.9081 8.75635 15.3022 7.51416 17.3375 7.51416C18.3125 7.51416 19.1506 7.58635 19.3953 7.61916V10.0042ZM15.5 0.0141602C7.21625 0.0141602 0.5 6.72947 0.5 15.0142C0.5 23.2979 7.21625 30.0142 15.5 30.0142C23.7847 30.0142 30.5 23.2979 30.5 15.0142C30.5 6.72947 23.7847 0.0141602 15.5 0.0141602Z"
+                                    fill="#3B5998"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            class="icon"
+                            href="#"
+                            id="twitter"
+                        ><svg
+                                width="31"
+                                height="31"
+                                viewBox="0 0 31 31"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M21.4644 11.9551C21.47 12.0873 21.4737 12.2195 21.4737 12.3535C21.4737 16.4195 18.3781 21.1088 12.7175 21.1088C10.9794 21.1088 9.36219 20.5998 8 19.727C8.24094 19.7551 8.48562 19.7692 8.73406 19.7692C10.1759 19.7692 11.5025 19.2779 12.5562 18.452C11.2091 18.4276 10.0728 17.5379 9.68094 16.3154C9.86938 16.351 10.0616 16.3698 10.2603 16.3698C10.5406 16.3698 10.8125 16.3323 11.0712 16.262C9.66313 15.9798 8.60281 14.7357 8.60281 13.2451V13.2057C9.01719 13.4363 9.4925 13.5751 9.99687 13.591C9.17094 13.0388 8.62719 12.0967 8.62719 11.0298C8.62719 10.4654 8.77906 9.93666 9.04438 9.48197C10.5622 11.3438 12.83 12.5692 15.3875 12.6976C15.335 12.4726 15.3078 12.2373 15.3078 11.9963C15.3078 10.2967 16.6859 8.91854 18.3847 8.91854C19.2706 8.91854 20.0703 9.2926 20.6309 9.89072C21.3322 9.75291 21.9913 9.49697 22.5856 9.14447C22.3559 9.8626 21.8675 10.4654 21.2328 10.847C21.8553 10.772 22.4478 10.607 23 10.3623C22.5875 10.9792 22.0653 11.521 21.4644 11.9551ZM15.5 0.0141602C7.21531 0.0141602 0.5 6.72947 0.5 15.0142C0.5 23.2979 7.21531 30.0142 15.5 30.0142C23.7847 30.0142 30.5 23.2979 30.5 15.0142C30.5 6.72947 23.7847 0.0141602 15.5 0.0141602"
+                                    fill="#41A1F2"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            class="icon"
+                            href="#"
+                            id="youtube"
+                        ><svg
+                                width="31"
+                                height="31"
+                                viewBox="0 0 31 31"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M23 15.5804C23 16.7945 22.85 18.0085 22.85 18.0085C22.85 18.0085 22.7038 19.0417 22.2537 19.4973C21.6838 20.0945 21.0444 20.0973 20.7509 20.132C18.6519 20.2838 15.5 20.2885 15.5 20.2885C15.5 20.2885 11.6 20.2529 10.4 20.1385C10.0663 20.0757 9.31625 20.0945 8.74625 19.4973C8.29625 19.0417 8.15 18.0085 8.15 18.0085C8.15 18.0085 8 16.7945 8 15.5804V14.4423C8 13.2282 8.15 12.0151 8.15 12.0151C8.15 12.0151 8.29625 10.981 8.74625 10.5254C9.31625 9.92822 9.95563 9.92541 10.2491 9.89072C12.3481 9.73885 15.4972 9.73885 15.4972 9.73885H15.5028C15.5028 9.73885 18.6519 9.73885 20.7509 9.89072C21.0444 9.92541 21.6838 9.92822 22.2537 10.5254C22.7038 10.981 22.85 12.0151 22.85 12.0151C22.85 12.0151 23 13.2282 23 14.4423V15.5804ZM15.5 0.0141602C7.21531 0.0141602 0.5 6.72947 0.5 15.0142C0.5 23.2979 7.21531 30.0142 15.5 30.0142C23.7847 30.0142 30.5 23.2979 30.5 15.0142C30.5 6.72947 23.7847 0.0141602 15.5 0.0141602Z"
+                                    fill="#EA412C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer__outer">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Tài liệu 2D</a></li>
+                    <li><a href="#">Tài liệu 3D</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__brand">
+                <img
+                    src="./assets/img/Icon/curve.png"
+                    alt=""
+                    width="666.98px"
+                    height="256.02px"
+                >
+                <span>Designed and developed by Mona media</span>
+            </div>
+        </div>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

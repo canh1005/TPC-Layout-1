@@ -1,0 +1,168 @@
+footer {
+    position: relative;
+    background: $color-black-0;
+    width: 100%;
+    padding: 0 100px;
+    .footer__content {
+        color: $color-white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 100px;
+        .footer__info {
+            .title {
+                @include Text(normal, bold, 16px, 26px, unset, uppercase, $color-orange-0);
+            }
+            .contact {
+                h2 {
+                    @include Text(normal, 300, 40px, 48px, unset, unset, $color-white);
+                }
+                .contact__info {
+                    display: flex;
+                    margin-bottom: 50px;
+                    .phone {
+                        @include Text(normal, bold, 40px, 48px, unset, unset, $color-white);
+                    }
+                    .name {
+                        @include Text(normal, normal, 14px, 26px, unset, unset, $color-white);
+                        opacity: 0.6;
+                    }
+                    .line {
+                        @include Text(normal, normal, 50px, 26px, unset, unset, $color-white);
+                        padding: 10px;
+                    }
+                }
+            }
+            
+            .addressandsocial {
+                display: flex;
+                .social {
+                    display: flex;
+                    .icon {
+                        margin-right: 5px;   
+                    }
+                    #fb{
+                        &:hover{
+                            svg{
+                                path{
+                                    fill: skyblue;
+                                }
+                            }
+                        }
+                    }
+                    #twitter{
+                        &:hover{
+                            svg{
+                                path{
+                                    fill: blue;
+                                }
+                            }
+                        }
+                    }
+                    #youtube{
+                        &:hover{
+                            svg{
+                                path{
+                                    fill: $color-red-0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer__outer {
+                display: flex;
+                margin-top: 30px;
+                li {
+                    margin-right: 20px;
+                    a {
+                        @include Text(normal, bold, 12px, 14px, unset, uppercase, $color-white);
+                    }
+                }
+            }
+        }
+        .footer__brand {
+            position: relative;
+            span {
+                @include Text(normal, bold, 12px, 14px, unset, uppercase, $color-white);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    footer{
+        .footer__content{
+            .footer__info{
+                .addressandsocial{
+                    display: block;
+                    .social{
+                        padding-top: 10px;
+                    }
+                }
+            }
+            .footer__brand{
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1023.98px) {
+    footer{
+        .footer__content{
+            grid-template-columns: 1fr;
+            .footer__info{
+                .addressandsocial{
+                    display: block;
+                    .social{
+                        padding-top: 10px;
+                    }
+                }
+            }
+            .footer__brand{
+                padding-top: 20px;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767.98px) {
+    footer{
+        .footer__content{
+            .footer__info{
+                .addressandsocial{
+                    display: block;
+                    .social{
+                        padding-top: 10px;
+                    }
+                }
+                .contact{
+                    .contact__info{
+                        display: block;
+                        .line{
+                            display: none;
+                        }
+                    }
+                }
+                .footer__outer{
+                    display: block;
+                }
+            }
+            .footer__brand{
+                padding-top: 20px;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            
+        }
+    }
+}

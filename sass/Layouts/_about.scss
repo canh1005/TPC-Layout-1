@@ -1,0 +1,204 @@
+.about {
+    width: 100%;
+    mix-blend-mode: normal;
+    padding: 100px 0;
+    .about__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        .about__img {
+            position: relative;
+            .img__1 {
+                position: absolute;
+                left: 200px;
+                z-index: 3;
+                img {
+                    @include aboutImg(370px, 370px);
+                }
+                .rectangle {
+                    border-bottom: 10px solid $color-orange-0;
+                    border-right: 10px solid $color-orange-0;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 70%;
+                }
+            }
+            .img__2 {
+                position: absolute;
+                left: 375px;
+                top: 140px;
+                img {
+                    @include aboutImg(300px, 370px);
+                }
+                .play {
+                    width: 70px;
+                    height: 70px;
+                    background: $color-orange-0;
+                    border-radius: 100px;
+                    line-height: 80px;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 10px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        width: 16.67px;
+                        height: 20px;
+                        border-radius: 0;
+                    }
+                }
+            }
+            .img__3 {
+                position: absolute;
+                left: 200px;
+                top: 390px;
+                img {
+                    @include aboutImg(170px, 210px);
+                }
+            }
+        }
+        .about__description {
+            h2 {
+                width: 491px;
+                height: 144px;
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 48px;
+            }
+            #TPC {
+                border-radius: 100px;
+                background: $color-orange-0;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 10px 15px;
+                color: $color-white;
+            }
+            .first__para,
+            .second__para {
+                width: 485px;
+                height: 40px;
+                font-family: SF Pro Display;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                opacity: 0.7;
+            }
+            .first__para {
+                border-left: 2px solid $color-orange-0;
+                padding-left: 10px;
+                margin: 20px 0;
+            }
+            .second__para {
+                width: 500px;
+                height: 60px;
+                font-style: normal;
+                font-weight: normal;
+                margin-bottom: 30px;
+            }
+            .about__list {
+                display: grid;
+                grid-template-columns: repeat(2, 0.3fr);
+                gap: 10px;
+                .about__items {
+                    width: 280px;
+                    height: 107px;
+                    background: $color-black-0;
+                    border-radius: 20px;
+                    padding: 10px;
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
+                    span {
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1370px) {
+    .about {
+        .about__content {
+            .about__img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+                .img__1,
+                .img__2,
+                .img__3 {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .about__description {
+                .about__list {
+                    .about__items {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .about {
+        .about__content {
+            display: flex;
+            flex-direction: column-reverse;
+            .about__img {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: row-reverse;
+                .img__1,
+                .img__2,
+                .img__3 {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .about__description {
+                margin: auto;
+                text-align: center;
+                .about__list {
+                    grid-template-columns: repeat(2,1fr);
+                    .about__items {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767.98px) {
+    .about{
+        .about__content{
+            .about__description{
+                .about__list{
+                    grid-template-columns: repeat(1,0.5fr);
+                }
+            }
+        }
+    }
+}

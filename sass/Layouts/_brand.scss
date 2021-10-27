@@ -1,0 +1,94 @@
+.brand {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    .brand__content {
+        position: relative;
+        #brand__list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            li{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        #curve {
+            position: absolute;
+            width: 999.97px;
+            height: 384.43px;
+            top: 0;
+            left: 0;
+        }
+        .left,.right {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, $color-orange-0 0%, $color-red-0 100%);
+            border-radius: 100px;
+            text-align: center;
+            line-height: 41px;
+            position: absolute;
+            bottom: -100px;
+            right: 250px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .left{
+            background: $color-black;
+            opacity: 0.5;
+            right: 300px;
+            img{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .brand{
+        .brand__content{
+            #curve{
+                width: 70%;
+            }
+            .left{
+                right: 25%;
+            }
+            .right{
+                right: 20%;
+            }
+        }
+    }
+}
+@media screen and (max-width:1023.98px) {
+    .brand{
+        .brand__content{
+            #brand__list{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+@media screen and (max-width:767.98px) {
+    .brand{
+        .brand__content{
+            #brand__list{
+                grid-template-columns: repeat(2,1fr);
+            }
+            #curve{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:424.98px) {
+    .brand{
+        .brand__content{
+            #brand__list{
+                grid-template-columns: repeat(1,1fr);
+            }
+            #curve{
+                display: none;
+            }
+        }
+    }
+}
