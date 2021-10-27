@@ -450,6 +450,11 @@
   background: #061431;
   border-radius: 20px;
   padding: 10px;
+  position: relative;
+}
+
+.about .about__content .about__description .about__list .about__items:hover {
+  cursor: pointer;
 }
 
 .about .about__content .about__description .about__list .about__items a {
@@ -464,6 +469,22 @@
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.about .about__content .about__description .about__list .about__items button {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #f15b40 0%, #ed212b 100%);
+  border-radius: 100px;
+  text-align: center;
+  line-height: 41px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.about .about__content .about__description .about__list .about__items button:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1370px) {
@@ -1037,7 +1058,7 @@ footer {
   position: relative;
   background: #061431;
   width: 100%;
-  padding: 0 100px;
+  padding: 50px 100px;
 }
 
 footer .footer__content {
